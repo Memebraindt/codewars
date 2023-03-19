@@ -1,3 +1,9 @@
+"""
+Persistent Bugger
+https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
+"""
+
+
 def persistence(n):
     ans = 0
     while len(str(n)) > 1:
@@ -7,6 +13,7 @@ def persistence(n):
         n = res
         ans += 1
     return ans
+
 
 print(persistence(39))
 print(persistence(4))
