@@ -1,3 +1,8 @@
+"""
+https://www.codewars.com/kata/52597aa56021e91c93000cb0
+Moving Zeros To The End
+"""
+
 def move_zeros(lst):
     lst1, lst2 = [], []
     for x in lst:
