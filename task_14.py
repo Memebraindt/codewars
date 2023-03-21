@@ -3,19 +3,19 @@ https://www.codewars.com/kata/53d40c1e2f13e331fc000c26
 The Millionth Fibonacci Kata
 """
 import decimal
+
+
 def fib(n):
-    decimal.getcontext().prec = 100000
+    decimal.getcontext().prec = 10000
     root_5 = decimal.Decimal(5).sqrt()
     phi = ((1 + root_5) / 2)
     a = ((phi ** n) - ((-phi) ** -n)) / root_5
     return round(a)
 
+
 print(fib(5))
-print(fib(1))
-print(fib(-2))
-print(fib(5))
-print(fib(-6))
-print(fib(1000))
+print(fib(10000))
+print(fib(2000000))
 print(fib(-1000))
 
 
