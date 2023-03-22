@@ -48,6 +48,13 @@ def check_all(a, x, y):
     return l0
 
 
+def print_res(res):
+    for i in range(len(res)):
+        print()
+        for j in range(len(res[i])):
+            print("{:18}".format(str(res[i][j])), end=", ")
+
+
 def sudoku(puzzle):
     while not check_matrix(puzzle):
         res = []
@@ -60,27 +67,64 @@ def sudoku(puzzle):
                 else:
                     qq = check_all(puzzle, i, j)
                     if len(qq) != 1:
+                        # qq = qq.sort()
                         res[i].append(qq)
                     else:
+                        res[i].append(qq[0])
                         puzzle[i][j] = qq[0]
-        unique = [[0]*9]*2
-        uni_sqr =[[[0]*3]*3]
-        for i in range(9):
-            for j in range(9):
 
-                for x in range(len(res[i][j])):
-                    unique[res[i][j][x]][0] += 1
-                    unique[res[i][j][x]][1] += 1
-                    uni_sqr[i//3][j//3].append(res[i][j][x])
+        # uni_sqr =[[[0]*3]*3]
+        print(res)
+        for row in range(9):
+            unique_row = [0] * 10
+            for col in range(9):
+                if isinstance(res[row][col], list):
+                    for x in range(len(res[row][col])):
+                        unique_row[res[row][col][x]] += 1
+
+            print("row = ", row, "numb = ", unique_row)
+            for uni_num in range(len(unique_row)):
+                if unique_row[uni_num] == 1:
+                    for y in range(9):
+                        for z in range(len(res[row][y])):
+                            if res[row][y][z] == uni_num:
+                                res[row][y] = uni_num
+                                puzzle[row][y] = uni_num
+                                break
+
+        for col in range(9):
+            unique_col = [0] * 10
+            for row in range(9):
+                if isinstance(res[row][col], list):
+                    for x in range(len(res[row][col])):
+                        unique_col[res[row][col][x]] += 1
+
+            print("col = ", col, "numb = ", unique_col)
+            for uni_num in range(9):
+                if unique_col[uni_num] == 1:
+                    for xx in range(9):
+                        if isinstance(res[xx][col], list):
+                            print_res(puzzle)
+                            for z in range(len(res[xx][col])):
+                                if res[xx][col][z] == uni_num:
+                                    print("xx, col = ", xx, col)
+                                    res[xx][col] = uni_num
+                                    puzzle[xx][col] = uni_num
+                                    break
+
+        #
+        # for row in range(0, 9, 3):
+        #     for col in range(0, 9, 3):
+        #         for x in range(3):
+        #             for y in range(3):
+        #                 for z in range(len(res[row+x][col+y])):
+        #                     uni_sqr[row][col].append(res[row+x][col+y][z])
 
 
 
         if upd == puzzle:
             print("Не нашёл решение :(")
-            for i in range(len(res)):
-                print()
-                for j in range(len(res[i])):
-                    print("{:18}".format(str(res[i][j])), end=", ")
+            print_res(res)
             # print(puzzle)
             return 0
     return puzzle

@@ -42,6 +42,22 @@ https://www.codewars.com/kata/52f677797c461daaf7000740
 
 14th task
 2mil Fibonacci
+Timelimit 12s
 
 15th task
 https://www.codewars.com/kata/54b724efac3d5402db00065e
+
+
+16th task
+https://www.codewars.com/kata/5296bc77afba8baa690002d7
+Sudoku Solver
+
+17th task
+https://www.codewars.com/kata/5324945e2ece5e1f32000370
+Sum Strings as Numbers
+time-limit 
+
+18th task
+https://www.codewars.com/kata/55983863da40caa2c900004e
+Next bigger number with the same digits
+Wrong solution 126 tests passed, 24 failed
