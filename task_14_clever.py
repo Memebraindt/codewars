@@ -2,43 +2,30 @@
 https://www.codewars.com/kata/53d40c1e2f13e331fc000c26
 The Millionth Fibonacci Kata
 """
-import decimal
+
+import numpy as np
+from numpy.compat import long
 
 
 def fib(n):
-    decimal.getcontext().prec = 10000
-    root_5 = decimal.Decimal(5).sqrt()
-    phi = ((1 + root_5) / 2)
-    a = ((phi ** n) - ((-phi) ** -n)) / root_5
-    return round(a)
+    if -1 < n < 2:
+        return n
+
+    negative = n < 0
+    n = abs(n)
+
+    matrix_a = np.matrix([[0, 1], [1, 1]], dtype=object)
+    pow_matrix = pow(matrix_a, n-1)
+    res = pow_matrix * np.matrix([[0], [1]])
+    if negative and n % 2 == 0:
+        return -long(res[1])
+    else:
+        return long(res[1])
 
 
 print(fib(5))
-print(fib(10000))
-print(fib(2000000))
-print(fib(-1000))
-
-
-
-# left_num = 0
-# left = 0
-# mid = 1
-# mid_num = 1
-# right = 2
-# right_num = 1
-#
-# def count_fib(n, l, m, r, lz, mz, rz):
-#     res = 0
-#     cur
-#     if n > r:
-#         for x in range(r, n+1):
-#
-#     return res
-#
-# def fib(n):
-#     return count_fib(n, left, mid, right, left_num, mid_num, right_num)
-#
-#
-# print(fib(5))
-# print(fib(100))
-# print(fib(1000))
+print(fib(-5))
+print(fib(-1))
+# print(fib(10000))
+# print(fib(2000000))
+# print(fib(-1000))
