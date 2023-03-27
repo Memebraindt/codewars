@@ -1,3 +1,7 @@
+"""
+https://www.codewars.com/kata/51b66044bce5799a7f000003
+Roman Numerals Helper
+"""
 class RomanNumerals:
     lst = ["I", "V", "X", "L", "C", "D", "M"]
     num = [1, 5, 10, 50, 100, 500, 1000]

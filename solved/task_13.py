@@ -1,3 +1,8 @@
+"""
+https://www.codewars.com/kata/52f677797c461daaf7000740
+Smallest possible sum
+"""
+
 def solution(a):
     mx = 0
     mn = a[0]

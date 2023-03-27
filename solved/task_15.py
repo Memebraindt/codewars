@@ -1,3 +1,8 @@
+"""
+https://www.codewars.com/kata/54b724efac3d5402db00065e
+Decode the Morse code
+"""
+
 from preloaded import MORSE_CODE as MC
 
 
