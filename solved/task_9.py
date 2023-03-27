@@ -1,12 +1,12 @@
-# def narcissistic(val):
-#     sval = str(val)
-#     res = 0
-#     for c in sval:
-#         res += int(c) ** len(sval)
-#     return False if res != val else True
+"""
+https://www.codewars.com/kata/5287e858c6b5a9678200083c
+Does my number look big in this?
+"""
+
 
 def narcissistic(val):
     return val == sum(int(x) ** len(str(val)) for x in str(val))
+
 
 print(narcissistic(8))
 print(narcissistic(371))
