@@ -1,7 +1,6 @@
 """
 https://www.codewars.com/kata/5588bd9f28dbb06f43000085
 Hard Sudoku Solver
-doesn't work testing system
 """
 
 

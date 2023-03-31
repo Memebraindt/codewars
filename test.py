@@ -1,6 +1,35 @@
-def template(n):
-    return [[i if i == j else 0 for i in range(1, n+1)] for j in range(1, n+1)]
+import sys
+import subprocess
 
 
-print(template(7))
+def run_bot():
+    # Run your bot's main function here
+    print("Bot is running...\n")
 
+
+def restart_bot():
+    # Restart the Python script
+    print("Restarting bot...")
+    python = sys.executable
+    subprocess.Popen([python] + sys.argv)
+    sys.exit()
+
+
+def main():
+    # Start the bot
+    run_bot()
+
+    # Wait for input from the user
+    while True:
+        command = input("Enter command: ")
+        if command == "restart":
+            restart_bot()
+        elif command == "recompile":
+            # Recompile your bot's code here
+            print("Recompiling bot...")
+        else:
+            print("Unknown command")
+
+
+if __name__ == "__main__":
+    main()
