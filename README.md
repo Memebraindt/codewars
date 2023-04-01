@@ -41,22 +41,45 @@ https://www.codewars.com/kata/5263c6999e0f40dee200059d
 https://www.codewars.com/kata/52f677797c461daaf7000740
 
 14th task
-2mil Fibonacci
-Timelimit 12s
+https://www.codewars.com/kata/53d40c1e2f13e331fc000c26
 
 15th task
 https://www.codewars.com/kata/54b724efac3d5402db00065e
 
-
 16th task
 https://www.codewars.com/kata/5296bc77afba8baa690002d7
-Sudoku Solver
 
 17th task
 https://www.codewars.com/kata/5324945e2ece5e1f32000370
 Sum Strings as Numbers
-time-limit 
 
 18th task
 https://www.codewars.com/kata/55983863da40caa2c900004e
 Next bigger number with the same digits
+
+19th task
+https://www.codewars.com/kata/5877e7d568909e5ff90017e6
+How many numbers III?
+
+20th task
+https://www.codewars.com/kata/51fda2d95d6efda45e00004e
+Codewars style ranking system
+
+21th task
+https://www.codewars.com/kata/5588bd9f28dbb06f43000085
+Hard Sudoku Solver --not solved
+
+22th task
+https://www.codewars.com/kata/52bb6539a4cf1b12d90005b7
+Battleship field validator
+
+23th task
+https://www.codewars.com/kata/59568be9cc15b57637000054
+BECOME IMMORTAL
+
+24th task
+https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
+Sort the odd
+
+25th task
+???
