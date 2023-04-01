@@ -1,4 +1,6 @@
-D = {'A': ['B', 'BC', 'D', 'E', 'F', 'DG', 'H', 'EI'],
+from itertools import product
+
+PASSWORD = {'A': ['B', 'BC', 'D', 'E', 'F', 'DG', 'H', 'EI'],
      'B': ['A', 'C', 'D', 'E', 'F', 'G', 'EH', 'I'],
      'C': ['BA', 'B', 'D', 'E', 'F', 'EG', 'H', 'FI'],
      'D': ['A', 'B', 'C', 'E', 'EF', 'G', 'H', 'I'],
@@ -10,10 +12,14 @@ D = {'A': ['B', 'BC', 'D', 'E', 'F', 'DG', 'H', 'EI'],
      }
 
 
+def get_ans(passw):
+    return ["".join(p) for p in product(*(PASSWORD[int(d)] for d in passw))]
+
+
 def count_patterns_from(firstPoint, length):
     if length == 0 or length > 9:
         return 0
-    pass
+    return get_ans()
 
 
 print(count_patterns_from('A', 10), 0)

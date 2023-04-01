@@ -1,5 +1,7 @@
 import sys
 import subprocess
+# import time
+# import asyncio
 
 
 def run_bot():
@@ -12,7 +14,8 @@ def restart_bot():
     print("Restarting bot...")
     python = sys.executable
     subprocess.Popen([python] + sys.argv)
-    sys.exit()
+    # time.sleep(1)
+    # sys.exit()
 
 
 def main():
