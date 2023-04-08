@@ -1,38 +1,43 @@
-import sys
-import subprocess
-# import time
-# import asyncio
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
 
-def run_bot():
-    # Run your bot's main function here
-    print("Bot is running...\n")
+class LinkedList:
+    def __init__(self):
+        self.head = None
 
+    def append(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
 
-def restart_bot():
-    # Restart the Python script
-    print("Restarting bot...")
-    python = sys.executable
-    subprocess.Popen([python] + sys.argv)
-    # time.sleep(1)
-    # sys.exit()
+        # Find the correct position to insert the new node
+        if new_node.data < self.head.data:
+            new_node.next = self.head
+            self.head = new_node
+            return
 
+        current_node = self.head
+        while current_node.next and current_node.next.data < new_node.data:
+            current_node = current_node.next
+        new_node.next = current_node.next
+        current_node.next = new_node
 
-def main():
-    # Start the bot
-    run_bot()
+    def print_list(self):
+        current_node = self.head
+        while current_node:
+            print(current_node.data)
+            current_node = current_node.next
 
-    # Wait for input from the user
-    while True:
-        command = input("Enter command: ")
-        if command == "restart":
-            restart_bot()
-        elif command == "recompile":
-            # Recompile your bot's code here
-            print("Recompiling bot...")
-        else:
-            print("Unknown command")
+# Example usage
+linked_list = LinkedList()
+linked_list.append(3)
+linked_list.append(1)
+linked_list.append(4)
+linked_list.append(2)
 
-
-if __name__ == "__main__":
-    main()
+print("Original linked list:")
+linked_list.print_list()
