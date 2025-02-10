@@ -83,3 +83,9 @@ Sort the odd
 
 25th task
 ???
+
+26th task
+???
+
+27th task
+https://www.codewars.com/kata/534e01fbbb17187c7e0000c6
