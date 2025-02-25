@@ -10,7 +10,7 @@ def get_new_direction(d):
 def spiralize(n):
     matrix = [[0] * n for _ in range(n)]
     directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-    x, y, d, pd = 0, 0, 0, 1
+    x, y, d, pd = 0, 0, 0, 1 # pd - счётчик, сколько ходов сделано без поворота. Если происходит 2 поворота подряд, т.е. разворот на 180, то получается "самопересечение".
     dx, dy = directions[d]
     spiral_not_done = True 
     while spiral_not_done:
