@@ -82,7 +82,8 @@ https://www.codewars.com/kata/578aa45ee9fd15ff4600090d
 Sort the odd
 
 25th task
-???
+https://www.codewars.com/kata/585894545a8a07255e0002f1
+Screen Locking Patterns
 
 26th task
 ???
