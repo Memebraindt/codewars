@@ -86,7 +86,8 @@ https://www.codewars.com/kata/585894545a8a07255e0002f1
 Screen Locking Patterns
 
 26th task
-???
+https://www.codewars.com/kata/56a1c63f3bc6827e13000006
+How many are smaller than me II?
 
 27th task
 https://www.codewars.com/kata/534e01fbbb17187c7e0000c6
