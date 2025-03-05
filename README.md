@@ -91,3 +91,5 @@ How many are smaller than me II?
 
 27th task
 https://www.codewars.com/kata/534e01fbbb17187c7e0000c6
+Make a spiral
+
