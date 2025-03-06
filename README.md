@@ -48,6 +48,7 @@ https://www.codewars.com/kata/54b724efac3d5402db00065e
 
 16th task
 https://www.codewars.com/kata/5296bc77afba8baa690002d7
+Sudoku Solver
 
 17th task
 https://www.codewars.com/kata/5324945e2ece5e1f32000370
