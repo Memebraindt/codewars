@@ -45,6 +45,7 @@ https://www.codewars.com/kata/53d40c1e2f13e331fc000c26
 
 15th task
 https://www.codewars.com/kata/54b724efac3d5402db00065e
+Decode the Morse code
 
 16th task
 https://www.codewars.com/kata/5296bc77afba8baa690002d7
