@@ -39,6 +39,7 @@ https://www.codewars.com/kata/5263c6999e0f40dee200059d
 
 13th task
 https://www.codewars.com/kata/52f677797c461daaf7000740
+Smallest possible sum
 
 14th task
 https://www.codewars.com/kata/53d40c1e2f13e331fc000c26
