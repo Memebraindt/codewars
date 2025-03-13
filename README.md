@@ -3,6 +3,7 @@ repository for codewars
 
 1st task
 https://www.codewars.com/kata/514b92a657cdc65150000006
+Multiples of 3 or 5
 
 2nd task
 https://www.codewars.com/kata/554e4a2f232cdd87d9000038
